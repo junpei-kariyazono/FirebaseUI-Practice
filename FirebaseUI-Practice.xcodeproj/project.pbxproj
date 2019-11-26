@@ -13,9 +13,12 @@
 		2405CFF9238CB1DB003EDB0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2405CFF7238CB1DB003EDB0C /* Main.storyboard */; };
 		2405CFFB238CB1DD003EDB0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2405CFFA238CB1DD003EDB0C /* Assets.xcassets */; };
 		2405CFFE238CB1DD003EDB0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2405CFFC238CB1DD003EDB0C /* LaunchScreen.storyboard */; };
+		2405D006238CB298003EDB0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2405D005238CB298003EDB0C /* GoogleService-Info.plist */; };
+		DE2BCA212E80693677345515 /* Pods_FirebaseUI_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD993B1F6744B23491C85CA /* Pods_FirebaseUI_Practice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CD993B1F6744B23491C85CA /* Pods_FirebaseUI_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseUI_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2405CFEE238CB1DB003EDB0C /* FirebaseUI-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirebaseUI-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2405CFF1238CB1DB003EDB0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2405CFF3238CB1DB003EDB0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		2405CFFA238CB1DD003EDB0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2405CFFD238CB1DD003EDB0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2405CFFF238CB1DD003EDB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2405D005238CB298003EDB0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E14B5DBE7138C41EABFCFF5 /* Pods-FirebaseUI-Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseUI-Practice.release.xcconfig"; path = "Target Support Files/Pods-FirebaseUI-Practice/Pods-FirebaseUI-Practice.release.xcconfig"; sourceTree = "<group>"; };
+		CA5E50AD27B0C7816F8E302D /* Pods-FirebaseUI-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseUI-Practice.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseUI-Practice/Pods-FirebaseUI-Practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2BCA212E80693677345515 /* Pods_FirebaseUI_Practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				2405CFF0238CB1DB003EDB0C /* FirebaseUI-Practice */,
 				2405CFEF238CB1DB003EDB0C /* Products */,
+				A3EAD409FA6813027CDD91CD /* Pods */,
+				6961A0DAECF065DB458C266C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,27 @@
 				2405CFFA238CB1DD003EDB0C /* Assets.xcassets */,
 				2405CFFC238CB1DD003EDB0C /* LaunchScreen.storyboard */,
 				2405CFFF238CB1DD003EDB0C /* Info.plist */,
+				2405D005238CB298003EDB0C /* GoogleService-Info.plist */,
 			);
 			path = "FirebaseUI-Practice";
+			sourceTree = "<group>";
+		};
+		6961A0DAECF065DB458C266C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CD993B1F6744B23491C85CA /* Pods_FirebaseUI_Practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3EAD409FA6813027CDD91CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E50AD27B0C7816F8E302D /* Pods-FirebaseUI-Practice.debug.xcconfig */,
+				4E14B5DBE7138C41EABFCFF5 /* Pods-FirebaseUI-Practice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2405D002238CB1DD003EDB0C /* Build configuration list for PBXNativeTarget "FirebaseUI-Practice" */;
 			buildPhases = (
+				9A670AB7D72610197FCCA702 /* [CP] Check Pods Manifest.lock */,
 				2405CFEA238CB1DB003EDB0C /* Sources */,
 				2405CFEB238CB1DB003EDB0C /* Frameworks */,
 				2405CFEC238CB1DB003EDB0C /* Resources */,
+				F4CFE94A5637C082E62C09E5 /* [CP] Embed Pods Frameworks */,
+				0BF2BB28D2383900CE113BE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +157,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				2405CFFE238CB1DD003EDB0C /* LaunchScreen.storyboard in Resources */,
+				2405D006238CB298003EDB0C /* GoogleService-Info.plist in Resources */,
 				2405CFFB238CB1DD003EDB0C /* Assets.xcassets in Resources */,
 				2405CFF9238CB1DB003EDB0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BF2BB28D2383900CE113BE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseUI-Practice/Pods-FirebaseUI-Practice-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseUI-Practice/Pods-FirebaseUI-Practice-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseUI-Practice/Pods-FirebaseUI-Practice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A670AB7D72610197FCCA702 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseUI-Practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4CFE94A5637C082E62C09E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseUI-Practice/Pods-FirebaseUI-Practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseUI-Practice/Pods-FirebaseUI-Practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseUI-Practice/Pods-FirebaseUI-Practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2405CFEA238CB1DB003EDB0C /* Sources */ = {
@@ -282,6 +373,7 @@
 		};
 		2405D003238CB1DD003EDB0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA5E50AD27B0C7816F8E302D /* Pods-FirebaseUI-Practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +392,7 @@
 		};
 		2405D004238CB1DD003EDB0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E14B5DBE7138C41EABFCFF5 /* Pods-FirebaseUI-Practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
